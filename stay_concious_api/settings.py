@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'profiles',
-    'house',
+    'houses',
 ]
 
 MIDDLEWARE = [
