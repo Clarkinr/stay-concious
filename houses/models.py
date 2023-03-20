@@ -22,3 +22,8 @@ class House(models.Model):
 
     def __str__(self):
         return f'{self.id} {self.title}'
+
+
+def create_profile(sender, instance, created, **kwargs):
+    if created:
+        Profile.objects.create(owner=instance)
